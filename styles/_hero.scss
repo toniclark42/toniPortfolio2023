@@ -1,0 +1,84 @@
+// HERO
+
+header {
+    background: url('../assets/images-design/hero-image.webp') no-repeat fixed;
+    background-size: 414px 276px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-content: space-between;
+
+    @media screen and (min-width:414px) {
+        background-size: 838px 560px;
+        background-position-y: calc(0px - 250px); 
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    @media screen and (min-width: 838px) {
+        background: url('../assets/images-design/hero-image.webp') center bottom no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        background: url('../assets/images-design/hero-image.webp') no-repeat center bottom;
+        background-size: 100vw auto;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1620px) {
+        background-position-y: calc(0px - 680px); 
+        flex-direction: row;
+    }
+
+    .header-content {
+        color: $white;
+        align-self: flex-end;
+        padding: 212px 15px 9px;
+        margin-top: auto;
+        text-align: center;
+
+        @media screen and (min-width: 414px) {
+            padding: 212px 20px 9px;
+            text-align: right;
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: 838px) {
+            padding: 300px 34px 20px;
+        }
+
+        .header-name {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+            font-family: $primary-font-family;
+
+            @media screen and (min-width: 838px) {
+                font-size: 32px;
+                line-height: 46px;
+            }
+        }
+
+        .header-title {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: $secondary-font-family;
+
+            @media screen and (min-width: 838px) {
+                font-size: 24px;
+                line-height: 27px;
+            }
+        }
+    }
+}

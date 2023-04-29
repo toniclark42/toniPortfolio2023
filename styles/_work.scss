@@ -1,0 +1,152 @@
+// WORK
+
+.work {
+    padding: 0 25px 0;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:414px) {
+        max-width: 566px;
+        margin: 0 auto 40px;
+    }
+
+    @media screen and (min-width:1440px) {
+        max-width: 1000px;
+    }
+    
+    h2 {
+        color: $primary-orange;
+        margin-bottom: 10px;
+
+        @media screen and (min-width:1440px) {
+            margin-bottom: 27px;
+        }
+    }
+
+    &-entry {
+        margin-bottom: 30px;
+
+        @media screen and (min-width:1440px) {
+            margin-bottom: 75px;
+        }
+
+        @media screen and (min-width:414px) {
+            max-width: 356px;
+
+            &_mymove {
+                align-self: flex-start;
+                margin-left: 40px;
+            }
+    
+            &_red-ventures {
+                align-self: center;
+                margin-left: 40px;
+            }
+    
+            &_r2h {
+                align-self: flex-end;
+            }
+        }
+
+        @media screen and (min-width:1440px) {
+            max-width: 660px;
+        }
+
+        .work-header {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 17px;
+
+            // @media screen and (min-width: 440px) {
+            //     justify-content: flex-start;
+            // }
+
+            img {
+                width: 115px;
+                margin: auto 0;
+
+                @media screen and (min-width:1440px) {
+                    width: 200px;
+                    margin-right: 60px;
+                }
+            }
+            
+            .logo-r2h {
+                height: 18px;
+
+                @media screen and (min-width:1440px) {
+                    height: 31px;
+                }
+            }
+
+            &_title {
+                display: inline-block;
+                max-width: 130px;
+
+                @media screen and (min-width:838px) {
+                    max-width: 300px;
+                }
+
+                // h3, p {
+                    // display: inline-block;
+                    // width: 130px;
+                    // text-align: right;
+
+                    // @media screen and (min-width:838px) {
+                        // width: 167px;
+                        // text-align: left;
+                    // }
+    
+                // }
+
+                h3 {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-family: $secondary-font-family;
+
+                    @media screen and (min-width:1440px) {
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                }
+    
+                p {
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+
+                    @media screen and (min-width:1440px) {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+
+            }
+
+            &::after {
+                content: url("../assets/svgs/arrow-right.svg");
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                @media screen and (min-width:1440px) {
+                    height: 40px;
+                    width: 40px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+        }
+
+        .work-description {
+            color: $primary-green;
+        }
+    }
+}

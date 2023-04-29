@@ -1,0 +1,91 @@
+// SKILLS
+
+.skills {
+    color: $white;
+    padding: 33px 0 132px 22px;
+    margin-bottom: 22px;
+    background: url('../assets/images-design/skills-image.webp') no-repeat;
+    background-size: cover;
+    background-position-x: 17%;
+    
+    @media screen and (min-width:414px) {
+        max-height: 433px;
+        padding: 33px 0 132px 8%;
+        background-size: 838px 560px;
+        background-position-y: calc(0px - 140px);
+    }
+
+    @media screen and (min-width: 838px) {
+        background:url('../assets/images-design/skills-image.webp') center center fixed;
+        height: 433px;
+        position: relative; 
+        margin: 0 auto 40px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position-x: calc(50%);
+    }
+
+        @media screen and (min-width:1440px) {
+            height: 705px;
+            max-height: 705px;
+        }
+    
+
+    &-content {
+        background: rgba(84, 94, 85, 0.8);
+        width: 240px;
+        padding: 10px 66px 19px 16px;
+
+        @media screen and (min-width: 838px) {
+            position: absolute;
+            top: 33px;
+            left: 50%;
+            transform: translate(-150%, 0);
+        }
+
+        @media screen and (min-width:1440px) {
+            width: 396px;
+            top: 50px;
+            padding: 21px 108px 29px 25px;
+        }
+
+        h2, &-list {
+            width: 158px;
+            display: inline-block;
+        }
+
+        h2 {
+            margin-bottom: 8px;
+
+            @media screen and (min-width:1440px) {
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+    }
+    
+    &-list {
+
+        & > ul {
+            margin: 0;
+
+            li ul li {
+                padding-left: 17px;
+            }
+        }
+
+        ul li::before {
+            content: "- ";
+        }
+
+        &_second-layer {
+            padding-left: 15px;
+        }
+
+        &_third-layer {
+            padding-left: 25px;
+        }
+    }
+}

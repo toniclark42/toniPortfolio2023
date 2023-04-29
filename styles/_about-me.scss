@@ -1,0 +1,44 @@
+//ABOUT ME
+
+.about-me {
+    color: $primary-orange;
+    padding: 23px 26px 25px;
+
+    @media screen and (min-width:414px) {
+        max-width: 489px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 838px) {
+        max-width: 700px;
+        margin-bottom: 40px;
+        padding: 23px 0 25px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 838px) {
+            font-size: 36px;
+            line-height: 52px;
+        }
+    }
+
+    p {
+        margin-bottom: 14px;
+
+        @media screen and (min-width:414px) {
+            line-height: 17px;
+        }
+
+        @media screen and (min-width: 838px) {
+            font-size: 16px;
+            line-height: 17px;
+        }
+
+        @media screen and (min-width:1440px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}

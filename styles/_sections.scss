@@ -1,0 +1,33 @@
+// SECTIONS
+
+section {
+    margin-bottom: 22px;
+
+    @media screen and (min-width:1440px) {
+        margin-bottom: 40px;
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: $primary-font-family;
+
+    @media screen and (min-width:1440px) {
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+
+p, ul li {
+    font-family: $secondary-font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    @media screen and (min-width:1440px) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}

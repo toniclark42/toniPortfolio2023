@@ -1,0 +1,22 @@
+// VARIABLES
+
+//Colors
+$white: #fff;
+$primary-green: #545E55;
+$primary-orange: #B87E56;
+
+//Fonts
+$primary-font-family: 'Kaushan Script', cursive;
+$secondary-font-family: 'Tenor Sans', sans-serif;
+$tertiary-font-family: 'Rokkitt', serif;
+
+
+//PARTIALS
+@import "_reset";
+@import "_hero";
+@import "_sections";
+@import "_about-me";
+@import "_skills";
+@import "_work";
+@import "_footer";
+  

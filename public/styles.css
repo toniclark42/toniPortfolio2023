@@ -1,0 +1,492 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: url("../assets/images-design/hero-image.webp") no-repeat fixed;
+  background-size: 414px 276px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+@media screen and (min-width: 414px) {
+  header {
+    background-size: 838px 560px;
+    background-position-y: -250px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 838px) {
+  header {
+    background: url("../assets/images-design/hero-image.webp") center bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    background: url("../assets/images-design/hero-image.webp") no-repeat center bottom;
+    background-size: 100vw auto;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1620px) {
+  header {
+    background-position-y: -680px;
+    flex-direction: row;
+  }
+}
+header .header-content {
+  color: #fff;
+  align-self: flex-end;
+  padding: 212px 15px 9px;
+  margin-top: auto;
+  text-align: center;
+}
+@media screen and (min-width: 414px) {
+  header .header-content {
+    padding: 212px 20px 9px;
+    text-align: right;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 838px) {
+  header .header-content {
+    padding: 300px 34px 20px;
+  }
+}
+header .header-content .header-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Kaushan Script", cursive;
+}
+@media screen and (min-width: 838px) {
+  header .header-content .header-name {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+header .header-content .header-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Tenor Sans", sans-serif;
+}
+@media screen and (min-width: 838px) {
+  header .header-content .header-title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+section {
+  margin-bottom: 22px;
+}
+@media screen and (min-width: 1440px) {
+  section {
+    margin-bottom: 40px;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Kaushan Script", cursive;
+}
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
+p, ul li {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+@media screen and (min-width: 1440px) {
+  p, ul li {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.about-me {
+  color: #B87E56;
+  padding: 23px 26px 25px;
+}
+@media screen and (min-width: 414px) {
+  .about-me {
+    max-width: 489px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 838px) {
+  .about-me {
+    max-width: 700px;
+    margin-bottom: 40px;
+    padding: 23px 0 25px;
+  }
+}
+.about-me h2 {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 838px) {
+  .about-me h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+.about-me p {
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 414px) {
+  .about-me p {
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 838px) {
+  .about-me p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-me p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.skills {
+  color: #fff;
+  padding: 33px 0 132px 22px;
+  margin-bottom: 22px;
+  background: url("../assets/images-design/skills-image.webp") no-repeat;
+  background-size: cover;
+  background-position-x: 17%;
+}
+@media screen and (min-width: 414px) {
+  .skills {
+    max-height: 433px;
+    padding: 33px 0 132px 8%;
+    background-size: 838px 560px;
+    background-position-y: -140px;
+  }
+}
+@media screen and (min-width: 838px) {
+  .skills {
+    background: url("../assets/images-design/skills-image.webp") center center fixed;
+    height: 433px;
+    position: relative;
+    margin: 0 auto 40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-x: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .skills {
+    height: 705px;
+    max-height: 705px;
+  }
+}
+.skills-content {
+  background: rgba(84, 94, 85, 0.8);
+  width: 240px;
+  padding: 10px 66px 19px 16px;
+}
+@media screen and (min-width: 838px) {
+  .skills-content {
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translate(-150%, 0);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .skills-content {
+    width: 396px;
+    top: 50px;
+    padding: 21px 108px 29px 25px;
+  }
+}
+.skills-content h2, .skills-content-list {
+  width: 158px;
+  display: inline-block;
+}
+.skills-content h2 {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1440px) {
+  .skills-content h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+.skills-list > ul {
+  margin: 0;
+}
+.skills-list > ul li ul li {
+  padding-left: 17px;
+}
+.skills-list ul li::before {
+  content: "- ";
+}
+.skills-list_second-layer {
+  padding-left: 15px;
+}
+.skills-list_third-layer {
+  padding-left: 25px;
+}
+
+.work {
+  padding: 0 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 414px) {
+  .work {
+    max-width: 566px;
+    margin: 0 auto 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .work {
+    max-width: 1000px;
+  }
+}
+.work h2 {
+  color: #B87E56;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .work h2 {
+    margin-bottom: 27px;
+  }
+}
+.work-entry {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1440px) {
+  .work-entry {
+    margin-bottom: 75px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .work-entry {
+    max-width: 356px;
+  }
+  .work-entry_mymove {
+    align-self: flex-start;
+    margin-left: 40px;
+  }
+  .work-entry_red-ventures {
+    align-self: center;
+    margin-left: 40px;
+  }
+  .work-entry_r2h {
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .work-entry {
+    max-width: 660px;
+  }
+}
+.work-entry .work-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 17px;
+}
+.work-entry .work-header img {
+  width: 115px;
+  margin: auto 0;
+}
+@media screen and (min-width: 1440px) {
+  .work-entry .work-header img {
+    width: 200px;
+    margin-right: 60px;
+  }
+}
+.work-entry .work-header .logo-r2h {
+  height: 18px;
+}
+@media screen and (min-width: 1440px) {
+  .work-entry .work-header .logo-r2h {
+    height: 31px;
+  }
+}
+.work-entry .work-header_title {
+  display: inline-block;
+  max-width: 130px;
+}
+@media screen and (min-width: 838px) {
+  .work-entry .work-header_title {
+    max-width: 300px;
+  }
+}
+.work-entry .work-header_title h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Tenor Sans", sans-serif;
+}
+@media screen and (min-width: 1440px) {
+  .work-entry .work-header_title h3 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+.work-entry .work-header_title p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+@media screen and (min-width: 1440px) {
+  .work-entry .work-header_title p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.work-entry .work-header::after {
+  content: url("../assets/svgs/arrow-right.svg");
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1440px) {
+  .work-entry .work-header::after {
+    height: 40px;
+    width: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.work-entry .work-description {
+  color: #545E55;
+}
+
+footer {
+  background-color: #B87E56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+footer .footer-social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+footer .footer-social a .github-logo {
+  height: 18px;
+  width: 18px;
+}
+@media screen and (min-width: 838px) {
+  footer .footer-social a .github-logo {
+    height: 27px;
+    width: 27px;
+  }
+}
+footer .footer-social a .linkedin-logo {
+  height: 20px;
+  width: 20px;
+}
+@media screen and (min-width: 838px) {
+  footer .footer-social a .linkedin-logo {
+    height: 30px;
+    width: 30px;
+  }
+}
+footer p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 17px;
+  font-family: "Rokkitt", serif;
+  display: inline-block;
+  margin-right: 16px;
+}
+@media screen and (min-width: 838px) {
+  footer p {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
