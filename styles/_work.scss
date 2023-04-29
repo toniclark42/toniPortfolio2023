@@ -58,10 +58,6 @@
             position: relative;
             margin-bottom: 17px;
 
-            // @media screen and (min-width: 440px) {
-            //     justify-content: flex-start;
-            // }
-
             img {
                 width: 115px;
                 margin: auto 0;
@@ -87,18 +83,6 @@
                 @media screen and (min-width:838px) {
                     max-width: 300px;
                 }
-
-                // h3, p {
-                    // display: inline-block;
-                    // width: 130px;
-                    // text-align: right;
-
-                    // @media screen and (min-width:838px) {
-                        // width: 167px;
-                        // text-align: left;
-                    // }
-    
-                // }
 
                 h3 {
                     font-weight: 400;
