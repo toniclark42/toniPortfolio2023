@@ -1,7 +1,6 @@
 //ABOUT ME
 
 .about-me {
-    color: $primary-orange;
     padding: 23px 26px 25px;
 
     @media screen and (min-width:414px) {
@@ -17,6 +16,7 @@
 
     h2 {
         margin-bottom: 12px;
+        color: $primary-orange;
 
         @media screen and (min-width: 838px) {
             font-size: 36px;
@@ -26,6 +26,7 @@
 
     p {
         margin-bottom: 14px;
+        color: $primary-green;
 
         @media screen and (min-width:414px) {
             line-height: 17px;
