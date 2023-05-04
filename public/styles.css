@@ -180,7 +180,6 @@ p, ul li {
 }
 
 .about-me {
-  color: #B87E56;
   padding: 23px 26px 25px;
 }
 @media screen and (min-width: 414px) {
@@ -198,6 +197,7 @@ p, ul li {
 }
 .about-me h2 {
   margin-bottom: 12px;
+  color: #B87E56;
 }
 @media screen and (min-width: 838px) {
   .about-me h2 {
@@ -207,6 +207,7 @@ p, ul li {
 }
 .about-me p {
   margin-bottom: 14px;
+  color: #545E55;
 }
 @media screen and (min-width: 414px) {
   .about-me p {
